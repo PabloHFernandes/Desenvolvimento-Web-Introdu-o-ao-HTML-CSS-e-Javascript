@@ -1,0 +1,87 @@
+.valorant{
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    text-shadow: 1px 1px 10px rgb(255, 204, 204);
+    color: red;
+    font-size: 35px;
+}
+
+body{
+    background-color: rgb(221, 221, 221);
+}
+
+h2{
+    font-family: "Russo One", sans-serif;
+    text-shadow: 1px 1px 10px rgb(255, 204, 204);
+    color: red;
+}
+
+p{
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+#loud{
+    color: rgb(0, 150, 0);
+    text-shadow: 1px 1px 10px rgba(0, 255, 76, 0.212);
+}
+
+.loudteam{
+    border-radius: 10px;
+    margin: 10px;
+    border-style: dashed;
+}
+
+.agentes > ul > li{
+    list-style-type: circle;
+}
+
+.ultimojogo{
+    color: green;
+}
+
+.saibamais{
+    color: red;
+}
+
+
+
+/* Segunda pagina */
+
+
+
+.descricao{
+    border-color: green;
+}
+
+.loudtitulo{
+    font-family: "Russo One", sans-serif;
+    text-shadow: 1px 1px 10px rgb(3, 182, 41);
+    color: green;
+}
+
+.jogadoresloud{
+    text-shadow: 1px 1px 10px rgb(3, 182, 41);
+    color: green;
+}
+
+.tecnicos{
+    text-shadow: 1px 1px 10px rgb(3, 182, 41);
+    color: green;
+}
+
+.final{
+    text-shadow: 1px 1px 10px rgb(3, 182, 41);
+    color: green;
+}
+
+.descricaofinal{
+    border-color: green;
+}
+
+.loudvitoria{
+    border-radius: 10px;
+    border: 1px solid green;
+}
