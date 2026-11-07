@@ -1,0 +1,228 @@
+<!--
+    Pablo Henrique Fernandes Costa - 261072006
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXTECH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color:  rgb(236, 236, 236);
+        }
+        
+        header{
+            background-color: rgb(64, 64, 248);
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        header > h1{
+            font-family: "Bricolage Grotesque", sans-serif;
+            color: white;
+            text-shadow: 2px 2px 10px black;
+            padding-left: 30px;
+
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            margin-right: 25px;
+        }
+
+        .cards {
+            position: relative;
+            background-color: white;
+            border: 1px solid #0138cfb4;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 20px;
+            
+        }
+
+        .cards img {
+            width: 100%;
+            height: 170px;
+            object-fit: contain;
+            margin-bottom: 12px;
+        }
+
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .preco{
+            color: blue;
+            padding-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .descricao{
+            padding-top: 20px;
+            font-size: 14px;
+        }
+
+        h3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: blue;
+            font-size: 60px;
+            padding-left: 50px;
+            padding-top: 100px;
+            animation: aparecer 1.5s ease;
+        }
+
+        .texto{
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-top: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            animation: aparecer 1.5s ease;
+        }
+
+        .catalogo{
+            padding-bottom: 50px;
+        }
+
+        footer{
+            margin-top: 100px;
+            background-color: blue;
+            height: 40px;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+        }
+
+        .texto2{
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            padding-bottom: 100px;
+            animation: aparecer 1.5s ease;
+        }
+        
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }   
+
+
+        @media (max-width: 900px) {
+            .produtos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+            .produtos {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body> 
+    <header>
+        <h1>NEXTECH</h1>  
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Catalogo</a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
+        
+    <main>
+        <h2>NEXTECH</h2>
+        <p class="texto">A NexTech é uma loja de eletrônicos voltada para quem gosta de tecnologia e procura produtos de qualidade. Nossa loja oferece diversos equipamentos e acessórios, como mouses, teclados, monitores, microfones e outros itens para computadores. Nosso objetivo é oferecer produtos com bons preços e ajudar nossos clientes a encontrar os equipamentos ideais para o dia a dia, seja para estudar, trabalhar ou jogar. Buscamos sempre trazer opções modernas e práticas para diferentes necessidades.</p>
+
+        <h2 class="catalogo">CATALOGO</h2>
+        <p class="texto2">Em nosso catálogo você encontra diversos produtos de tecnologia, desde acessórios básicos até equipamentos voltados para jogos. Temos opções de mouses, teclados mecânicos, monitores, microfones e gabinetes para quem deseja montar ou melhorar seu computador. Confira abaixo alguns dos produtos disponíveis em nossa loja, com suas principais características e preços.</p>
+
+        <section class="produtos">
+            <article class="cards">
+                <img src="https://imgs.search.brave.com/yXX589WeOjFDCXAoLPvoZUm0OxUgL1eeok5-3mvEILM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/MjFkZXVBMzhHbkwu/anBn" alt="Mouse gpro">
+                <h3>Mouse Gpro Superlight 2</h3>
+                <p class="descricao">O Logitech G PRO X Superlight 2 é a próxima evolução de um ícone dos jogos profissionais — ajudando você a elevar o nível do seu jogo com maior velocidade e precisão. </p>
+                <p class="preco">R$ 600,00</p>
+
+            </article>
+            <article class="cards">
+                <img src="https://imgs.search.brave.com/ytGstpGIUWURpS3xHOiF2ICvpSXOMYXdu75mUJnqtlE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hcGku/dGVjaGtub3cuY29t/LmJyL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDI2LzEwL3RlY2xh/ZG8tbWFnbmV0aWNv/LWF1bGEtd2luNjgt/aGUtbWF4LmpwZz93/PTE5MjA" alt="Teclado Magnético Aula">
+                <h3>Teclado Magnético Aula WIN68 HE MAX 60%</h3>
+                <p class="descricao">Teclado para jogos de gatilho rápido: o teclado magnético para jogos AULA WIN68 HE MAX oferece uma taxa de pesquisa de 8.000 Hz líder do setor e tempo de resposta 8x mais rápido do que o teclado mecânico tradicional.</p>
+                <p class="preco">R$ 350,00</p>
+
+            </article>
+            <article class="cards">
+                <img src="https://imgs.search.brave.com/MLbIue8JBbX6TY_P1ZA727ojcjUbQDa9YrirT15afy8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oeXBl/cnguY29tL2Nkbi9z/aG9wL2ZpbGVzL2h5/cGVyeF9xdWFkY2Fz/dF8wM19iYWNrX2Y0/ZmUyZTQ4LWVmZWIt/NDA2Yi05NWIyLThi/ZTBmYTJmNWFiMS5q/cGc_dj0xNzYzNTYz/MTM5" alt="HyperX QuadCast">
+                <h3>Microfone HyperX QuadCast</h3>
+                <p class="descricao">O HyperX QuadCast é um microfone condensador USB com um ótimo som e aparência atraente. A impressionante iluminação RGB e os efeitos dinâmicos adicionarão estilo e elegância a qualquer transmissão ou configuração.</p>
+                <p class="preco">R$ 800,00</p>
+
+            </article>
+            <article class="cards">
+                <img src="https://imgs.search.brave.com/hfLK3XIjfYeZXjdDLIIBtZkr6TDlObi3Bq4r1tNYlJ4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5waWNoYXUuY29t/LmJyL21lZGlhL2Nh/dGFsb2cvcHJvZHVj/dC9jYWNoZS83NGMx/MDU3Zjc5OTFiNGVk/YjJiYzdiZGFhOTRk/ZTkzMy9xLzIvcTI3/ZzRmMTI2NTUyLmpw/Zw" alt="Monitor Gamer AOC Agon Quad">
+                <h3>Monitor Gamer AOC Agon Quad</h3>
+                <p class="descricao">Com 180Hz, você acompanha cada movimentação com fluidez extrema, sem interrupções ou atrasos, mesmo nos momentos mais acelerados da partida.</p>
+                <p class="preco">R$ 1300,00</p>
+            </article>
+            <article class="cards">
+                <img src="https://imgs.search.brave.com/SYwjUMYIDjeMpSgP6574mCaL2bzLm_BK6zZFFkp3TS4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/Xzk0NTU5NC1NTEIx/MDc5NTk0MTE2MzRf/MDMyMDI2LUUud2Vi/cA" alt="Teclado Magnético Akko x Monsgeek FUN60">
+                <h3>Teclado Magnético Akko x Monsgeek FUN60</h3>
+                <p class="descricao">A tecnologia Rapid Trigger de 0.01mm garante uma resposta instantânea, ideal para jogos de alta performance.</p>
+                <p class="preco">R$ 200,00</p>
+            </article>
+            <article class="cards">
+                <img src="https://imgs.search.brave.com/h-YDDOZc_T7Xctcwe6RX0pj2s8V0WBNWW58EU76WU8s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nbmV0aW5mby5j/b20uYnIvaW1hZ2Vu/cy83MjB4NzIwLzIy/ODYxQTEuanBn" alt="Gabinete Gamer K-Mex Aquário Micro">
+                <h3>Gabinete Gamer K-Mex Aquário Micro</h3>
+                <p class="descricao">O gabinete gamer K-MEX Aquário Micro é uma escolha excepcional para aqueles que desejam montar uma estação de jogo compacta, mas poderosa.</p>
+                <p class="preco">R$ 280,00</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>NEXTECH — Sua loja de eletrônicos e tecnologia.</p>
+    </footer>
+</body>
+</html> 
