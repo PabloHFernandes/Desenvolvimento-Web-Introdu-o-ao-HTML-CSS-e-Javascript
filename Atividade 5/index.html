@@ -94,12 +94,18 @@
         }
 
         main{
-            width: 800px;
+            width: 100%;
+            max-width: 800px;
             margin: auto;
             background-color: white;
             padding: 20px;
             border-radius: 20px;
             border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        input, textarea, select {
+            max-width: 100%;
         }
 
     </style> 
@@ -152,7 +158,7 @@
 
             <label>Interesses:</label>
 
-            <input type="checkbox" id="interesses1" name="interesses>
+            <input type="checkbox" id="interesses1" name="interesses">
             <label class="checkbox" for="interesses1">Programação</label>
             
             <input type="checkbox" id="interesses2" name="interesses">
