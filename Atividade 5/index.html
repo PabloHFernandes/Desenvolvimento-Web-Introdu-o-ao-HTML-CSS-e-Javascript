@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        body {
+            background-color: #dbdada;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+        input, textarea {
+            border-radius: 5px;
+            border: 1px solid gray;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border: 2px solid blue;
+        }
+        button {
+            background-color: rgb(0, 146, 32);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        @media (max-width: 600px) {
+            form {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+        .cancelar{
+            margin-top: 20px;
+            background-color: rgb(241, 0, 0);
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        .radio{
+            display: inline-flex; 
+            align-items: center;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        .checkbox{
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+            text-shadow: 1px 1px 1px rgb(0, 1, 51);
+            color: white;
+        }
+
+        .enviar:hover {
+            background-color: rgb(2, 90, 0);
+        }
+
+        .cancelar:hover {
+            background-color: rgb(95, 0, 0);
+        }
+
+        main{
+            width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid black;
+        }
+
+    </style> 
+</head>
+<body>
+
+    <header>
+        <h1>Formulário Acadêmico</h1>
+    </header>
+
+    <main>
+        
+        <section>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Nome">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required placeholder="Senha"> 
+
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" id="data" name="data" required>
+        </section>
+
+        <section>
+
+            <label>Curso:</label>
+
+            <input type="radio" id="curso1" name="curso">
+            <label class="radio" for="curso1">Engenharia de software</label>
+            
+            <input type="radio" id="curso2" name="curso">
+            <label class="radio" for="curso2">Ciencia da computação</label>
+            
+            <input type="radio" id="curso3" name="curso">
+            <label class="radio" for="curso3">Analise e desenvolvimento de sistemas</label>
+            
+            <input type="radio" id="curso4" name="curso">
+            <label class="radio" for="curso4">Cybersegurança</label>
+            
+
+            <label for="sexo">Sexo:</label>
+            <select name="Sexo" id="sexo" required>
+                <option value="Sexo">Selecione</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+
+            <label>Interesses:</label>
+
+            <input type="checkbox" id="interesses1" name="interesses>
+            <label class="checkbox" for="interesses1">Programação</label>
+            
+            <input type="checkbox" id="interesses2" name="interesses">
+            <label class="checkbox" for="interesses2">Desenvolvimento Web</label>
+            
+            <input type="checkbox" id="interesses3" name="interesses">
+            <label class="checkbox" for="interesses3">Inteligência Artificial</label>
+            
+            <input type="checkbox" id="interesses4" name="interesses">
+            <label class="checkbox" for="interesses4">Desenvolvimento de Jogos</label>
+
+        </section>
+
+        <section>
+
+            <label for="comentarios">Comentários:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+
+            <label for="foto">Upload de fotos:</label>
+            <input type="file" id="foto" name="foto">
+
+            <button class="enviar" type="submit">Enviar</button>
+
+            <button class="cancelar" type="reset">Cancelar</button>
+        </section>
+        
+    </main>
+</body>
+</html>
